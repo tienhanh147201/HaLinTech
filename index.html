@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HaLin Tech – Máy Tính Tiến Hạnh – Tiến Hạnh PC Gaming</title>
-  <meta name="description" content="HaLin Tech - Máy Tính Tiến Hạnh - Tiến Hạnh PC Gaming chuyên PC Gaming, PC Văn phòng, Xeon đa nhiệm, màn hình, linh kiện chính hãng tại Hà Nội & Thanh Hóa." />
+  <title>HaLin Tech – Máy Tính Tiến Hạnh | PC Gaming · Văn Phòng · Linh Kiện</title>
+  <meta name="description" content="HaLin Tech - Máy Tính Tiến Hạnh chuyên PC Gaming, PC Văn phòng, Xeon đa nhiệm, màn hình, linh kiện chính hãng tại Hà Nội & Thanh Hóa." />
+
+  <!-- =========================================================================
+       [NOTE THAY ẢNH FAVICON - ICON GÓC TRÁI TAB / THANH TÌM KIẾM]
+       Khi đưa lên GitHub/Netlify, bạn có thể đổi href thành "images/favicon.png"
+       hoặc giữ nguyên SVG màu xanh dương bên dưới để hiển thị ngay lập tức.
+       ========================================================================= -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230284c7'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-size='24' font-weight='800' fill='%23ffffff' text-anchor='middle'%3EHLT%3C/text%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +21,7 @@
       --primary: #0284c7;       /* Xanh dương chủ đạo */
       --primary-dark: #0369a1;
       --primary-light: #e0f2fe;
-      --accent: #38bdf8;
+      --accent: #0ea5e9;
       --dark: #0b1120;
       --dark-card: #111827;
       --text: #334155;
@@ -55,7 +63,7 @@
       gap: 6px;
     }
     .topbar-right { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
-    .topbar a { color: var(--accent); font-weight: 700; }
+    .topbar a { color: #38bdf8; font-weight: 700; }
     .topbar a:hover { text-decoration: underline; }
 
     /* ================= HEADER ================= */
@@ -85,17 +93,19 @@
       height: 42px;
       border-radius: 10px;
       object-fit: cover;
-      background: linear-gradient(135deg, var(--primary), #0ea5e9);
+      background: linear-gradient(135deg, var(--primary), var(--accent));
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #ffffff;
       font-weight: 800;
       font-size: 15px;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
     }
     .logo-text { display: flex; flex-direction: column; }
-    .logo-title { font-size: clamp(16px, 3.8vw, 19px); font-weight: 800; color: var(--dark); line-height: 1.1; }
-    .logo-title b { color: var(--primary); }
+    /* Chữ HALIN TECH màu xanh dương */
+    .logo-title { font-size: clamp(16px, 3.8vw, 19px); font-weight: 800; color: var(--primary); line-height: 1.1; }
+    .logo-title b { color: var(--primary-dark); }
     .logo-sub { font-size: clamp(10px, 2.4vw, 11.5px); font-weight: 700; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
 
     nav.desktop-nav { display: flex; gap: 22px; }
@@ -117,7 +127,7 @@
       white-space: nowrap;
     }
     .btn-primary {
-      background: linear-gradient(135deg, var(--primary), #0ea5e9);
+      background: linear-gradient(135deg, var(--primary), var(--accent));
       color: var(--white);
       box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
     }
@@ -127,7 +137,7 @@
       color: var(--white);
       border: 1.5px solid rgba(255, 255, 255, 0.35);
     }
-    .btn-outline-light:hover { border-color: var(--accent); color: var(--accent); background: rgba(56, 189, 248, 0.08); }
+    .btn-outline-light:hover { border-color: #38bdf8; color: #38bdf8; background: rgba(56, 189, 248, 0.08); }
     .btn-outline {
       background: var(--white);
       color: var(--primary);
@@ -159,7 +169,7 @@
     .mobile-menu.active { display: flex; }
     .mobile-menu a { font-weight: 600; padding: 6px 0; color: var(--dark); border-bottom: 1px dashed var(--border); }
 
-    /* ================= HERO (GIỐNG FORM ẢNH 1 - TÔNG XANH DƯƠNG) ================= */
+    /* ================= HERO ================= */
     .hero {
       padding: clamp(36px, 6vw, 68px) 0;
       background: radial-gradient(circle at 80% 30%, #0c4a6e 0%, #09152b 48%, #060b19 100%);
@@ -175,7 +185,7 @@
       display: inline-block;
       background: rgba(14, 165, 233, 0.16);
       border: 1px solid rgba(56, 189, 248, 0.35);
-      color: var(--accent);
+      color: #38bdf8;
       font-weight: 700;
       font-size: clamp(11px, 2.6vw, 12px);
       padding: 5px 14px;
@@ -190,7 +200,7 @@
       line-height: 1.22;
       margin-bottom: 14px;
     }
-    .hero h1 span { color: var(--accent); }
+    .hero h1 span { color: #38bdf8; }
     .hero p {
       font-size: clamp(13.5px, 3.2vw, 15.5px);
       color: #cbd5e1;
@@ -249,7 +259,7 @@
     }
     .sec-head p { color: var(--muted); font-size: clamp(13px, 3vw, 15px); }
 
-    /* ================= DANH MỤC (TỐI ƯU 2 CỘT TRÊN MOBILE NHƯ ẢNH 2) ================= */
+    /* ================= DANH MỤC ================= */
     .cat-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -282,12 +292,12 @@
     .cat-card h3 { font-size: clamp(14.5px, 3.4vw, 17px); color: var(--dark); margin-bottom: 4px; }
     .cat-card p { font-size: clamp(12px, 2.8vw, 13.5px); color: var(--muted); line-height: 1.4; }
 
-    /* ================= SẢN PHẨM (6 CẤU HÌNH - TỐI ƯU NHƯ ẢNH 3) ================= */
+    /* ================= SẢN PHẨM (6 CẤU HÌNH) ================= */
     .bg-dark-sec {
       background: #0b1120;
       color: var(--white);
     }
-    .bg-dark-sec .sec-head span { color: var(--accent); }
+    .bg-dark-sec .sec-head span { color: #38bdf8; }
     .bg-dark-sec .sec-head h2 { color: var(--white); }
     .bg-dark-sec .sec-head p { color: #94a3b8; }
 
@@ -306,7 +316,7 @@
       transition: 0.3s;
     }
     .prod-card:hover, .prod-card:active {
-      border-color: var(--accent);
+      border-color: #38bdf8;
       transform: translateY(-4px);
       box-shadow: 0 12px 28px rgba(2, 132, 199, 0.25);
     }
@@ -335,7 +345,7 @@
     }
     .prod-specs li::before {
       content: "•";
-      color: var(--accent);
+      color: #38bdf8;
       font-weight: 800;
       position: absolute;
       left: 0;
@@ -349,7 +359,7 @@
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       flex-wrap: wrap;
     }
-    .prod-price { font-size: clamp(15px, 3.6vw, 19px); font-weight: 800; color: var(--accent); }
+    .prod-price { font-size: clamp(15px, 3.6vw, 19px); font-weight: 800; color: #38bdf8; }
     .btn-sm { padding: 7px 14px; font-size: clamp(11.5px, 2.6vw, 13px); }
 
     .needs-box {
@@ -372,7 +382,7 @@
       border-radius: 50px;
     }
 
-    /* ================= CAM KẾT (SÚC TÍCH + HIỆU ỨNG HOVER/TOUCH NHƯ ẢNH 4) ================= */
+    /* ================= CAM KẾT ================= */
     .commit-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -386,7 +396,6 @@
       transition: all 0.25s ease;
       cursor: pointer;
     }
-    /* Hiệu ứng khi di chuột trên PC hoặc chạm vào trên điện thoại */
     .commit-card:hover, .commit-card:active, .commit-card:focus-within {
       border-color: var(--primary);
       background: #f0f9ff;
@@ -402,13 +411,11 @@
       margin-bottom: 8px;
       transition: 0.25s;
     }
-    .commit-card:hover .commit-num, .commit-card:active .commit-num {
-      color: var(--primary);
-    }
+    .commit-card:hover .commit-num, .commit-card:active .commit-num { color: var(--primary); }
     .commit-card h3 { font-size: clamp(14.5px, 3.4vw, 17px); color: var(--dark); margin-bottom: 5px; }
     .commit-card p { font-size: clamp(12px, 2.8vw, 13.5px); color: var(--muted); line-height: 1.4; }
 
-    /* ================= HÌNH ẢNH THỰC TẾ (6 ẢNH ĐẸP NHƯ ẢNH 5) ================= */
+    /* ================= HÌNH ẢNH THỰC TẾ ================= */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -438,7 +445,7 @@
       font-weight: 600;
     }
 
-    /* ================= GIỚI THIỆU (NHƯ ẢNH 6) ================= */
+    /* ================= GIỚI THIỆU ================= */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -516,10 +523,10 @@
       gap: 16px;
     }
     .foot-brand { font-size: clamp(17px, 4vw, 20px); font-weight: 800; color: var(--white); margin-bottom: 4px; }
-    .foot-brand b { color: var(--accent); }
-    footer a { color: var(--accent); font-weight: 600; }
+    .foot-brand b { color: #38bdf8; }
+    footer a { color: #38bdf8; font-weight: 600; }
 
-    /* ================= FLOATING BUTTONS ================= */
+    /* ================= FLOATING BUTTONS (ZALO + ĐIỆN THOẠI + FACEBOOK) ================= */
     .float-contact {
       position: fixed;
       bottom: 18px;
@@ -541,8 +548,10 @@
       font-size: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
     }
+    .float-btn:hover { transform: scale(1.08); }
     .float-zalo { background: #0068ff; }
     .float-call { background: #0284c7; font-size: 18px; }
+    .float-fb { background: #1877f2; font-size: 20px; }
 
     /* ================= RESPONSIVE MOBILE & TABLET ================= */
     @media (max-width: 992px) {
@@ -576,8 +585,7 @@
     <div class="container nav-wrap">
       <a href="#top" class="logo" aria-label="HaLin Tech - Máy Tính Tiến Hạnh">
         <!-- =====================================================================
-             [NOTE THAY ẢNH 1]: THAY ẢNH LOGO GÓC TRÁI
-             Cách thay: Bỏ file logo của bạn vào thư mục images/ với tên "logo.png"
+             [NOTE THAY ẢNH LOGO HEADER]: Lưu ảnh logo vào thư mục images/logo.png
              ===================================================================== -->
         <img src="images/logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" alt="Logo HaLin Tech" class="logo-img">
         <div class="logo-img" style="display:none;">HLT</div>
@@ -612,7 +620,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION (THEO FORM ẢNH 1) -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -637,8 +645,7 @@
 
       <div class="hero-media">
         <!-- =====================================================================
-             [NOTE THAY ẢNH 2]: THAY ẢNH BÌA 1 (ẢNH BỘ PC NỔI BẬT Ở PHẦN ĐẦU TRANG)
-             Cách thay: Lưu ảnh vào thư mục images/ với tên "bia-1.jpg"
+             [NOTE THAY ẢNH BÌA 1 - ĐẦU TRANG]: Lưu ảnh vào thư mục images/bia-1.jpg
              ===================================================================== -->
         <img src="images/bia-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80'" alt="Bộ PC Gaming HaLin Tech - Máy Tính Tiến Hạnh">
         <div class="hero-float-card">
@@ -669,7 +676,7 @@
     </div>
   </section>
 
-  <!-- SẢN PHẨM / 6 CẤU HÌNH NỔI BẬT (THEO FORM ẢNH 3) -->
+  <!-- SẢN PHẨM / 6 CẤU HÌNH NỔI BẬT -->
   <section id="san-pham" class="bg-dark-sec">
     <div class="container">
       <div class="sec-head">
@@ -679,10 +686,9 @@
       </div>
 
       <div class="prod-grid">
-        <!-- CẤU HÌNH 1 -->
+        <!-- CẤU HÌNH 1 | [NOTE THAY ẢNH CẤU HÌNH 1]: images/pc-1.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 1]: Lưu ảnh vào images/pc-1.jpg -->
             <img src="images/pc-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80'" alt="PC Xeon E5-2676 V3 GT 730">
             <span class="prod-badge">Giá tiết kiệm</span>
           </div>
@@ -701,10 +707,9 @@
           </div>
         </article>
 
-        <!-- CẤU HÌNH 2 -->
+        <!-- CẤU HÌNH 2 | [NOTE THAY ẢNH CẤU HÌNH 2]: images/pc-2.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 2]: Lưu ảnh vào images/pc-2.jpg -->
             <img src="images/pc-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=700&q=80'" alt="PC Xeon E5-2676 V3 GTX 1650">
             <span class="prod-badge">Chạy đa nhiệm</span>
           </div>
@@ -723,10 +728,9 @@
           </div>
         </article>
 
-        <!-- CẤU HÌNH 3 -->
+        <!-- CẤU HÌNH 3 | [NOTE THAY ẢNH CẤU HÌNH 3]: images/pc-3.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 3]: Lưu ảnh vào images/pc-3.jpg -->
             <img src="images/pc-3.jpg" onerror="this.src='https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=700&q=80'" alt="PC i5-12400F GTX 1650">
             <span class="prod-badge">Bán chạy</span>
           </div>
@@ -745,10 +749,9 @@
           </div>
         </article>
 
-        <!-- CẤU HÌNH 4 -->
+        <!-- CẤU HÌNH 4 | [NOTE THAY ẢNH CẤU HÌNH 4]: images/pc-4.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 4]: Lưu ảnh vào images/pc-4.jpg -->
             <img src="images/pc-4.jpg" onerror="this.src='https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80'" alt="PC i5-14400F GTX 1660 Super">
             <span class="prod-badge">Gaming mượt</span>
           </div>
@@ -767,10 +770,9 @@
           </div>
         </article>
 
-        <!-- CẤU HÌNH 5 -->
+        <!-- CẤU HÌNH 5 | [NOTE THAY ẢNH CẤU HÌNH 5]: images/pc-5.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 5]: Lưu ảnh vào images/pc-5.jpg -->
             <img src="images/pc-5.jpg" onerror="this.src='https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=80'" alt="PC i7-12700KF RTX 3060">
             <span class="prod-badge">Cấu hình cao</span>
           </div>
@@ -789,10 +791,9 @@
           </div>
         </article>
 
-        <!-- CẤU HÌNH 6 -->
+        <!-- CẤU HÌNH 6 | [NOTE THAY ẢNH CẤU HÌNH 6]: images/pc-6.jpg -->
         <article class="prod-card">
           <div class="prod-img">
-            <!-- [NOTE THAY ẢNH CẤU HÌNH 6]: Lưu ảnh vào images/pc-6.jpg -->
             <img src="images/pc-6.jpg" onerror="this.src='https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80'" alt="Màn hình full viền 24 - 27 inch">
             <span class="prod-badge">Màn hình</span>
           </div>
@@ -827,7 +828,7 @@
     </div>
   </section>
 
-  <!-- CAM KẾT (SÚC TÍCH + HIỆU ỨNG CHẠM/DI CHUỘT NHƯ ẢNH 4) -->
+  <!-- CAM KẾT -->
   <section id="cam-ket">
     <div class="container">
       <div class="sec-head">
@@ -845,7 +846,7 @@
     </div>
   </section>
 
-  <!-- HÌNH ẢNH THỰC TẾ (6 ẢNH ĐẸP NHƯ ẢNH 5) -->
+  <!-- HÌNH ẢNH THỰC TẾ -->
   <section id="khach-hang" class="bg-dark-sec">
     <div class="container">
       <div class="sec-head">
@@ -854,37 +855,37 @@
         <p>Cảm ơn quý khách hàng tại Hà Nội, Thanh Hóa và trên toàn quốc đã luôn tin tưởng ủng hộ HaLin Tech – Máy Tính Tiến Hạnh!</p>
       </div>
       <div class="gallery-grid">
-        <!-- [NOTE THAY ẢNH THỰC TẾ 1]: Lưu vào images/thuc-te-1.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 1]: images/thuc-te-1.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80'" alt="Cơ sở Hà Nội">
           <figcaption>Cơ sở 1 – 67 Nguyễn Đổng Chi, Hà Nội</figcaption>
         </figure>
 
-        <!-- [NOTE THAY ẢNH THỰC TẾ 2]: Lưu vào images/thuc-te-2.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 2]: images/thuc-te-2.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&q=80'" alt="Giao dàn PC văn phòng">
           <figcaption>Giao đơn dàn PC văn phòng cho khách</figcaption>
         </figure>
 
-        <!-- [NOTE THAY ẢNH THỰC TẾ 3]: Lưu vào images/thuc-te-3.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 3]: images/thuc-te-3.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-3.jpg" onerror="this.src='https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80'" alt="Đóng gói gửi COD">
           <figcaption>Đóng gói chống sốc kỹ, gửi COD toàn quốc</figcaption>
         </figure>
 
-        <!-- [NOTE THAY ẢNH THỰC TẾ 4]: Lưu vào images/thuc-te-4.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 4]: images/thuc-te-4.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-4.jpg" onerror="this.src='https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=600&q=80'" alt="Bàn giao tận nơi">
           <figcaption>Lắp đặt & bàn giao tận nơi cho khách</figcaption>
         </figure>
 
-        <!-- [NOTE THAY ẢNH THỰC TẾ 5]: Lưu vào images/thuc-te-5.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 5]: images/thuc-te-5.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-5.jpg" onerror="this.src='https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=600&q=80'" alt="Setup góc gaming">
           <figcaption>Setup trọn bộ PC Gaming bể cá LED</figcaption>
         </figure>
 
-        <!-- [NOTE THAY ẢNH THỰC TẾ 6]: Lưu vào images/thuc-te-6.jpg -->
+        <!-- [NOTE THAY ẢNH THỰC TẾ 6]: images/thuc-te-6.jpg -->
         <figure class="gallery-item">
           <img src="images/thuc-te-6.jpg" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80'" alt="Đơn hàng trong ngày">
           <figcaption>Đơn hàng bàn giao trong ngày</figcaption>
@@ -893,20 +894,19 @@
     </div>
   </section>
 
-  <!-- GIỚI THIỆU (NHƯ ẢNH 6) -->
+  <!-- GIỚI THIỆU -->
   <section id="gioi-thieu">
     <div class="container about-grid">
       <div>
         <!-- =====================================================================
-             [NOTE THAY ẢNH 3]: THAY ẢNH BÌA 2 (ẢNH BANNER GIỚI THIỆU CỬA HÀNG)
-             Cách thay: Lưu ảnh banner vào thư mục images/ với tên "bia-2.jpg"
+             [NOTE THAY ẢNH BÌA 2 - MỤC GIỚI THIỆU]: Lưu ảnh vào images/bia-2.jpg
              ===================================================================== -->
-        <img src="images/bia-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80'" alt="HaLin Tech - Máy Tính Tiến Hạnh - Tiến Hạnh PC Gaming">
+        <img src="images/bia-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80'" alt="HaLin Tech - Máy Tính Tiến Hạnh">
       </div>
       <div class="about-content">
         <span>Giới thiệu</span>
-        <h2>Về HaLin Tech (Máy Tính Tiến Hạnh – Tiến Hạnh PC Gaming)</h2>
-        <p><b>HaLin Tech (Máy Tính Tiến Hạnh – Tiến Hạnh PC Gaming)</b> chuyên cung cấp máy tính gaming, máy văn phòng, dàn Xeon đa nhiệm/giả lập, màn hình, linh kiện và phụ kiện máy tính chính hãng tại <b>Hà Nội</b> và <b>Thanh Hóa</b>.</p>
+        <h2>HaLin Tech – Máy Tính Tiến Hạnh</h2>
+        <p><b>HaLin Tech – Máy Tính Tiến Hạnh</b> chuyên cung cấp máy tính gaming, máy văn phòng, dàn Xeon đa nhiệm/giả lập, màn hình, linh kiện và phụ kiện máy tính chính hãng tại <b>Hà Nội</b> và <b>Thanh Hóa</b>.</p>
         <p>Mỗi đơn hàng là một lần được khách hàng tin tưởng. Chúng tôi giữ vững ba điều: tư vấn đúng nhu cầu và ngân sách, máy chất lượng với bảo hành rõ ràng, và hỗ trợ kỹ thuật tận tâm sau bán hàng.</p>
         <div class="about-links">
           <a href="https://www.facebook.com/halintech" target="_blank" rel="noopener" class="btn btn-primary">Facebook HaLin Tech</a>
@@ -929,7 +929,7 @@
               <div>
                 <b>Cơ sở 1 – Từ Liêm, Hà Nội</b>
                 67 Phố Nguyễn Đổng Chi, Từ Liêm, Hà Nội · 
-                <a href="https://www.google.com/maps/search/?api=1&query=67+Phố+Nguyễn+Đổng+Chi,+Từ+Liêm,+Hà+Nội" target="_blank" rel="noopener">Chỉ đường</a>
+                <a href="https://maps.app.goo.gl/semGbQBt3e7PtF6RA" target="_blank" rel="noopener">Chỉ đường</a>
               </div>
             </li>
             <li>
@@ -983,10 +983,11 @@
     </div>
   </footer>
 
-  <!-- NÚT NỔI GÓC MÀN HÌNH -->
+  <!-- NÚT NỔI GÓC DƯỚI BÊN PHẢI (ZALO -> ĐIỆN THOẠI -> FACEBOOK) -->
   <div class="float-contact">
     <a href="https://zalo.me/0988373446" target="_blank" rel="noopener" class="float-btn float-zalo" aria-label="Chat Zalo">Zalo</a>
     <a href="tel:0988373446" class="float-btn float-call" aria-label="Gọi điện">☎</a>
+    <a href="https://www.facebook.com/tienhanh.halintech/" target="_blank" rel="noopener" class="float-btn float-fb" aria-label="Facebook HaLin Tech">f</a>
   </div>
 
 </body>
